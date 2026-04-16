@@ -3,6 +3,11 @@ export default function Home() {
     <div style={styles.page}>
       <main style={styles.main}>
 
+        {/* LOGO */}
+        <div style={styles.logoRow}>
+          <img src="/logo.png" alt="Aspire Logo" style={styles.logo} />
+        </div>
+
         {/* HERO */}
         <section style={styles.hero}>
           <img
@@ -73,7 +78,7 @@ export default function Home() {
 
 const styles = {
   page: {
-    background: "#ff2aa3", // HOT PINK 🔥
+    background: "#ff2aa3",
     minHeight: "100vh",
     color: "#000",
     fontFamily: "Arial"
@@ -82,6 +87,14 @@ const styles = {
     maxWidth: "1200px",
     margin: "0 auto",
     padding: "40px 20px"
+  },
+  logoRow: {
+    display: "flex",
+    justifyContent: "center",
+    marginBottom: "20px"
+  },
+  logo: {
+    width: "80px"
   },
   hero: {
     position: "relative",
@@ -96,8 +109,7 @@ const styles = {
     top: "20%",
     left: "50%",
     transform: "translateX(-50%)",
-    textAlign: "center",
-    color: "#000"
+    textAlign: "center"
   },
   title: {
     fontSize: "3rem",
